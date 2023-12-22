@@ -1,0 +1,143 @@
+body{
+    background-image: url(./assets/img/background.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+:root{
+    font-family: 'Nunito';
+}
+.congrats-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.congrats-img{
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+
+    
+}
+.congrats-header{
+    color: #E94285;
+    font-weight: bold;
+}
+.congrats-p{
+    width: 80%;
+    margin-bottom: 50px;
+    padding: 15px;
+}
+.content-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 50px;
+}
+
+.item-text{
+    width: 80%;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 15px;
+    text-align: center;
+    font-style: italic;
+
+}
+.text-container{
+    display: flex;
+    align-items: center;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.item-img{
+  width: 80%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  transition: scale 0.5s ease, box-shadow 0.5s ease; /* Individual transitions for scale and box-shadow */
+}
+.item-img-last{
+    width: 80%;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    transition: scale 0.5s ease, box-shadow 0.5s ease;
+}
+.item-img-last:hover{
+    scale: 1.05;
+    box-shadow: 0 0 30px rgba(233, 66, 133, 0.7); /* Adjust the opacity value as needed */
+}
+.item-img:hover{
+    scale: 1.05;
+    box-shadow: 0 0 30px rgba(233, 66, 133, 0.7); /* Adjust the opacity value as needed */
+}
+::-webkit-scrollbar{
+    width: 12px;
+  }
+  ::-webkit-scrollbar-track{
+    background: white
+  }
+  ::-webkit-scrollbar-thumb{
+    background: #E94285;
+    transition: transform(background) 0.5s ease ;
+    border-radius: 5px;
+    border: 2px solid var(--primary-1);
+  }
+  
+  .no-display{
+    display: none;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .main-container{
+    transition: display 0.5s ease; ;
+
+  }
+  .login-container{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+  }
+  .login-cat{
+    width: 100px;
+    height: 100px;
+    justify-self: center;
+  }
+  .btn{
+    background-color: #E94285;
+    border: none;
+    height: 30px;
+    color: wheat;
+    font-family:'Nunito' ;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease, color 0.5s ease; /* Individual transitions for scale and box-shadow */
+}
+  .btn:hover{
+    background-color: white;
+    color: #E94285;
+    box-shadow: 0 0 30px rgba(233, 66, 133, 0.7); /* Adjust the opacity value as needed */
+  }
+  #password{
+    border: 3px solid #E94285;
+  }
+  #password:focus{
+    box-shadow: 0 0 30px rgba(233, 66, 133, 0.7); /* Adjust the opacity value as needed */
+
+  }
